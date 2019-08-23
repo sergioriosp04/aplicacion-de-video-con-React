@@ -1,0 +1,21 @@
+.container-item{
+    width: 100vw;
+    white-space: nowrap;
+    height: 400px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+.container-item:hover{
+    overflow: auto;
+    transition: 450ms all;
+}
+.container-item::-webkit-scrollbar{
+    height: 9px;
+    background: #212735;
+}
+.container-item::-webkit-scrollbar-thumb{
+    background: #cad0e7;
+    border-radius: 10px;
+}
