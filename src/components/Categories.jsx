@@ -2,11 +2,11 @@ import React from 'react'
 
 import '../assets/styles/components/Categories.scss'
 
-const Categories = ( {children} ) => {
+const Categories = ( {children, title} ) => {
     return(
         <div className="categories">
             <h2 className="categories-title">
-                Mi lista
+                {title}
             </h2>
             {children}
         </div>

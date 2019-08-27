@@ -4,20 +4,13 @@ import Item from '../components/Item'
 
 import '../assets/styles/components/Containeritem.scss'
 
-const Containeritem = () =>{
+const Containeritem = ({ data }) =>{
     return(
         <div className="container-item">
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
+            {console.log(data.movies)}
+            {data.movies.map(movie =>
+                <Item key={movie.id} {...movie}/>        
+            )}
         </div>
     )
 }
